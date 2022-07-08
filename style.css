@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: norseBold;
+    src: url(./Norse-Bold.otf);
+}
+
+:root {
+    --font-family: norseBold;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+.image-side {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 32vw;
+    background-image: url(./img/chris_henry.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form-side {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    background-color: black;
+}
+
+.logo-background {
+    margin-top: 10rem;
+    width: 100%;
+    padding: 5px 0;
+    background-color: rgba(0,0,0,.5);
+}
+
+.logo-text {
+    font-family: var(--font-family, 'Courier New', Courier, monospace);
+    font-size: 2rem;
+    color: white;
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+.logo-and-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.c-text {
+    font-size: 1rm;
+    color: white;
+}
+.credit-text {
+    opacity: .6;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+a:visited, a:link, a:hover, a:active {
+    text-decoration: none;
+    color: white;
+}
