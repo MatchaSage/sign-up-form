@@ -82,6 +82,8 @@ a:visited, a:link, a:hover, a:active {
 .form.top-block {
     background-color: rebeccapurple;
     display: flex;
+    max-height: 25%;
+    flex: 1 0 auto;
     justify-content: center;
 }
 
@@ -94,6 +96,15 @@ a:visited, a:link, a:hover, a:active {
 
 .form.middle-block {
     display: flex;
+    flex: 1 0 auto;
+    max-height: 50%;
     justify-content: center;
     background-color: rgb(138, 138, 138);
+}
+
+.form.bottom-block{
+    display: flex;
+    flex: 1 0 auto;
+    max-height: 25%;
+    background-color: rgb(134, 0, 0);
 }
