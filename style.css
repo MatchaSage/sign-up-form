@@ -40,10 +40,6 @@ body {
     background-color: black;
 }
 
-input[type="text"], input[type="tel"], input[type="password"] {
-    font-size: 16px;
-}
-
 /*BEGIN IMAGE SIDE*/
 .logo-background {
     margin-top: 10rem;
@@ -123,13 +119,15 @@ a:visited, a:link, a:hover, a:active {
     padding-left: 30px;
 }
 
-#first_name, #last_name, #email, #phone_num, #password, #conf_password {
+/*Try not to use ID selectors, ran into an issue with specificity, try to use class selectors as much as possible.*/
+/* #first_name, #last_name, #email, #phone_num, #password, #conf_password {
     display: block;
     width: 200px;
     height: 30px;
     border: 2px solid rgb(36, 36, 36);
     border-radius: 8px;
-}
+    background-color: rgb(197, 197, 197);
+} */
 
 .form.row-1, .form.row-2, .form.row-3 {
     display: flex;
@@ -144,6 +142,17 @@ a:visited, a:link, a:hover, a:active {
 
 .user-form label {
     font-size: 1.1rem;
+}
+
+div > input {
+    font-size: 1.2rem;
+    padding-left: .5rem;
+    display: block;
+    width: 200px;
+    height: 30px;
+    border: 2px solid rgb(36, 36, 36);
+    border-radius: 8px;
+    background-color: rgb(197, 197, 197);
 }
 
 /*FORM BOTTOM BLOCK START*/
@@ -170,4 +179,8 @@ a:visited, a:link, a:hover, a:active {
 .create-button h3 {
     padding-top: 2rem;
     color: teal;
+}
+
+button:hover {
+    border: 1px solid black;
 }
