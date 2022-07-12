@@ -20,8 +20,8 @@ confPsswd.addEventListener('input', function() {
 function checkPass(user_pass, conf_pass) {
 
     if (user_pass == conf_pass) {
-        psswdBorder.style.border = "1px solid rgb(36, 36, 36)"
-        confBorder.style.border = "1px solid rgb(36, 36, 36)"
+        psswdBorder.style.border = "" //This is to keep the style we have set in the css file.
+        confBorder.style.border = ""
     }
     
     else {
