@@ -29,7 +29,6 @@ body {
     flex: 1 0 auto;
     justify-content: space-around;
     align-items: center;
-    max-width: 40vw;
     min-width: 40vw;
     background-image: url(./img/chris_henry.jpg);
     background-size: cover;
