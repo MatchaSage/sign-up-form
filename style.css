@@ -41,6 +41,7 @@ body {
     flex-direction: column;
     width: 100%;
     background-color: black;
+    font-family: var(--font-family-two, 'Courier New', Courier, monospace);
 }
 
 /*BEGIN IMAGE SIDE*/
@@ -97,7 +98,6 @@ body {
 
 .top-text {
     max-width: 75%;
-    font-family: var(--font-family-two, 'Courier New', Courier, monospace);
     color: white;
     font-size: 1.6rem;
 }
@@ -141,7 +141,8 @@ body {
 }
 
 .form.middle-block h2 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+    font-weight: 650;
     padding-left: 30px;
     padding-top: 10px;
 }
@@ -154,7 +155,6 @@ body {
 div > input {
     font-size: 1.2rem;
     padding-left: .5rem;
-    font-family: var(--font-family-two, 'Courier New', Courier, monospace);
     display: block;
     width: 250px;
     height: 30px;
@@ -166,7 +166,7 @@ div > input {
 
 input:focus {
     outline: none;
-    border: 2px solid blue;
+    border: 1px solid blue;
 }
 
 /*FORM BOTTOM BLOCK START*/
@@ -196,7 +196,6 @@ input:focus {
     font-size: 1.2rem;
     font-weight: 500;
     color: white;
-    font-family: var(--font-family-two);
 }
 
 button:hover {
