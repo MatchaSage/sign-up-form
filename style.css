@@ -179,7 +179,7 @@ input:focus {
     padding-top: 3rem;
     padding-left: 2rem;
 }
-.create-button button{
+.create-button button {
     width: 200px;
     height: 50px;
     font-size: 1.2rem;
@@ -208,4 +208,18 @@ button:hover {
 
 .create-button a:hover {
     color: white;
+}
+
+button:disabled {
+    font-size: 1.2rem;
+    font-family: var(--font-family-two, 'Courier New', Courier, monospace);
+    font-weight: 550;
+    color: rgb(68, 68, 68);
+}
+
+button:enabled {
+    font-size: 1.2rem;
+    font-family: var(--font-family-two, 'Courier New', Courier, monospace);
+    font-weight: 550;
+    color: rgb(0, 0, 0);
 }

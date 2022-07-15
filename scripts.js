@@ -2,6 +2,8 @@ let psswd = document.querySelector('#password');
 let confPsswd = document.querySelector('#conf_password');
 let psswdBorder = document.getElementById('password');
 let confBorder = document.getElementById('conf_password');
+let subForm = document.querySelector(".create-button > button");
+let submitButton = document.querySelector(".create-button > button");
 
 
 let user_pass = String();
@@ -34,6 +36,10 @@ function checkPass(user_pass, conf_pass) {
             });
         }
 
+        if (submitButton.disabled == true) {
+            submitButton.disabled = false;
+        }
+
     }
     
     else {
@@ -45,6 +51,7 @@ function checkPass(user_pass, conf_pass) {
             notMatched.style.color = "red"
             notMatched.className = "fail_text"
             currentDiv.append(notMatched);
+            submitButton.disabled = true;
         }
         
 
