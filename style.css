@@ -215,6 +215,7 @@ button:disabled {
     font-family: var(--font-family-two, 'Courier New', Courier, monospace);
     font-weight: 550;
     color: rgb(68, 68, 68);
+    border: none;
 }
 
 button:enabled {
