@@ -5,9 +5,12 @@ let confBorder = document.getElementById('conf_password');
 let subForm = document.querySelector(".create-button > button");
 let submitButton = document.querySelector(".create-button > button");
 
-
 let user_pass = String();
 let conf_pass = String();
+
+if (psswd.value == "" || confPsswd.value == "") {
+    submitButton.disabled = true;
+}
 
 psswd.addEventListener('input', function() {
     user_pass = this.value
@@ -20,7 +23,6 @@ confPsswd.addEventListener('input', function() {
 });
 
 function checkPass(user_pass, conf_pass) {
-
     if (user_pass == conf_pass) {
         psswdBorder.style.border = "" //This is to keep the style we have set in the css file.
         confBorder.style.border = ""
